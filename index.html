@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Support Informatique - Stylé</title>
+    <style>
+        /* TOUT LE CSS EST ICI MAINTENANT */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        main {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            margin-bottom: 80px; /* Espace pour l'effet 2 pages */
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        h2 { color: #1a2a6c; text-align: center; }
+
+        ul { list-style: none; padding: 0; }
+        ul li {
+            background: #f1f8ff;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #1a2a6c;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 15px; font-weight: bold; }
+        input, select, textarea {
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 30px;
+            background: #1a2a6c;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover { background: #e73c7e; transform: scale(1.05); }
+        
+        footer { text-align: center; color: white; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Support Informatique</h1>
+        <p>Demande d’assistance</p>
+    </header>
+    <main>
+        <section>
+            <h2>Problèmes fréquents</h2>
+            <ul>
+                <li>Ordinateur lent</li>
+                <li>Connexion Internet</li>
+                <li>Mot de passe oublié</li>
+            </ul>
+        </section>
+
+        <section id="formulaire">
+            <h2>Formulaire de contact</h2>
+            <form>
+                <label>Nom :</label>
+                <input type="text" placeholder="Votre nom">
+                <label>Email :</label>
+                <input type="email" placeholder="Votre email">
+                <label>Problème :</label>
+                <select>
+                    <option>Ordinateur lent</option>
+                    <option>Internet</option>
+                    <option>Mot de passe</option>
+                </select>
+                <label>Message :</label>
+                <textarea placeholder="Décrivez votre problème"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© Service informatique</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
